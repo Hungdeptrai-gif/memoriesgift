@@ -1,21 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1e1e1e;
+  --foreground: #ffffff;
+  --primary: #e91e63;
+  --primary-light: #ff80ab;
+  --pastel-pink: #ffb6c1;
+  --light-pastel-pink: #ffcccb;
+  --muted: #2a2a2a;
+  --muted-foreground: #ffb6c1;
+  --border: #444444;
+  --input: #2a2a2a;
+  --ring: #e91e63;
+  --card: #2a2a2a;
+  --card-foreground: #ffffff;
+  --popover: #2a2a2a;
+  --popover-foreground: #ffffff;
+  --secondary: #444444;
+  --secondary-foreground: #ffffff;
+  --destructive: #f44336;
+  --destructive-foreground: #ffffff;
+  --accent: #444444;
+  --accent-foreground: #ffffff;
+  --success: #4CAF50;
+  --error: #f44336;
+  --zalo-blue: #0068ff;
+  --facebook-blue: #4267B2;
+  --instagram-purple: #833AB4;
+  --free-ship-threshold: 349000;
+  --step-active: #e91e63;
+  --step-inactive: #555;
+  --header-bg: #e91e63;
+  --header-text: #ffffff;
+  --main-bg: #1e1e1e;
+  --card-bg: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #ffb6c1;
+  --text-muted: #ffcccb;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-light-pastel-pink: var(--light-pastel-pink);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-zalo-blue: var(--zalo-blue);
+  --color-facebook-blue: var(--facebook-blue);
+  --color-instagram-purple: var(--instagram-purple);
+  --color-step-active: var(--step-active);
+  --color-step-inactive: var(--step-inactive);
+  --color-header-bg: var(--header-bg);
+  --color-header-text: var(--header-text);
+  --color-main-bg: var(--main-bg);
+  --color-card-bg: var(--card-bg);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1e1e1e;
+    --foreground: #ffffff;
+    --primary: #e91e63;
+    --primary-light: #ff80ab;
+    --pastel-pink: #ffb6c1;
+    --light-pastel-pink: #ffcccb;
+    --muted: #2a2a2a;
+    --muted-foreground: #ffb6c1;
+    --border: #444444;
+    --input: #2a2a2a;
+    --ring: #e91e63;
+    --card: #2a2a2a;
+    --card-foreground: #ffffff;
+    --popover: #2a2a2a;
+    --popover-foreground: #ffffff;
+    --secondary: #444444;
+    --secondary-foreground: #ffffff;
+    --destructive: #f44336;
+    --destructive-foreground: #ffffff;
+    --accent: #444444;
+    --accent-foreground: #ffffff;
+    --success: #4CAF50;
+    --error: #f44336;
+    --zalo-blue: #0068ff;
+    --facebook-blue: #4267B2;
+    --instagram-purple: #833AB4;
+    --free-ship-threshold: 349000;
+    --step-active: #e91e63;
+    --step-inactive: #555;
+    --header-bg: #e91e63;
+    --header-text: #ffffff;
+    --main-bg: #1e1e1e;
+    --card-bg: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #ffb6c1;
+    --text-muted: #ffcccb;
   }
 }
 
@@ -24,3 +125,76 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom color utilities */
+.bg-pink { background-color: #e91e63; }
+.bg-light-pink { background-color: #ff80ab; }
+.bg-pastel-pink { background-color: #ffb6c1; }
+.bg-light-pastel-pink { background-color: #ffcccb; }
+.bg-black { background-color: #121212; }
+.bg-dark-gray { background-color: #1e1e1e; }
+.bg-gray { background-color: #2a2a2a; }
+.bg-light-gray { background-color: #444444; }
+.bg-white { background-color: #ffffff; }
+.bg-off-white { background-color: #f5f5f5; }
+.bg-light-gray-bg { background-color: #1e1e1e; }
+.bg-header-pink { background-color: #e91e63; }
+.bg-card-dark { background-color: #2a2a2a; }
+
+.text-pink { color: #e91e63; }
+.text-light-pink { color: #ff80ab; }
+.text-pastel-pink { color: #ffb6c1; }
+.text-light-pastel-pink { color: #ffcccb; }
+.text-black { color: #121212; }
+.text-dark-gray { color: #1e1e1e; }
+.text-gray { color: #2a2a2a; }
+.text-light-gray { color: #444444; }
+.text-white { color: #ffffff; }
+.text-off-white { color: #f5f5f5; }
+.text-header-white { color: #ffffff; }
+
+.border-pink { border-color: #e91e63; }
+.border-light-pink { border-color: #ff80ab; }
+.border-pastel-pink { border-color: #ffb6c1; }
+.border-light-pastel-pink { border-color: #ffcccb; }
+.border-black { border-color: #121212; }
+.border-dark-gray { border-color: #1e1e1e; }
+.border-gray { border-color: #2a2a2a; }
+.border-light-gray { border-color: #444444; }
+.border-white { border-color: #ffffff; }
+.border-off-white { border-color: #f5f5f5; }
+.border-light-gray-border { border-color: #444444; }
+
+.hover\:bg-pink:hover { background-color: #e91e63; }
+.hover\:bg-light-pink:hover { background-color: #ff80ab; }
+.hover\:bg-pastel-pink:hover { background-color: #ffb6c1; }
+.hover\:bg-light-pastel-pink:hover { background-color: #ffcccb; }
+.hover\:bg-dark-gray:hover { background-color: #1e1e1e; }
+.hover\:bg-gray:hover { background-color: #2a2a2a; }
+
+.hover\:text-pink:hover { color: #e91e63; }
+.hover\:text-light-pink:hover { color: #ff80ab; }
+.hover\:text-pastel-pink:hover { color: #ffb6c1; }
+
+.hover\:border-pink:hover { border-color: #e91e63; }
+.hover\:border-light-pink:hover { border-color: #ff80ab; }
+
+/* Gradient utilities */
+.bg-gradient-pink { background: linear-gradient(135deg, #e91e63, #ff80ab); }
+.bg-gradient-light { background: linear-gradient(135deg, #ffb6c1, #ffcccb); }
+
+/* Social media colors */
+.bg-zalo-blue { background-color: #0068ff; }
+.bg-facebook-blue { background-color: #4267B2; }
+.bg-instagram-purple { background-color: #833AB4; }
+
+.text-zalo-blue { color: #0068ff; }
+.text-facebook-blue { color: #4267B2; }
+.text-instagram-purple { color: #833AB4; }
+
+/* Status colors */
+.bg-success { background-color: #4CAF50; }
+.bg-error { background-color: #f44336; }
+
+.text-success { color: #4CAF50; }
+.text-error { color: #f44336; }
