@@ -6,7 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "dev:enhanced": "concurrently \"npm run lint\" \"npm run type-check\" \"next dev --turbopack\"",
+    "build:enhanced": "npm run lint && npm run type-check && next build",
+    "preview": "next build && next start",
+    "clean": "rm -rf .next out",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -22,6 +28,9 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.5"
   }
 }
