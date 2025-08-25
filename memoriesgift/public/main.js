@@ -1,5 +1,5 @@
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUCDRO6Ysfp6xktB2Eu1uAREWy8NjwX7kuhFzT_5jhV1JQFslIstJOfXb8FH5scuTj/exec";
-const SHARED_TOKEN = "replace-with-a-long-random-token"; // Must match your Apps Script
+const SHARED_TOKEN = "X9@d2L!k7#Qz1pF4^bH6wM3&yT8rU5$eG0jC"; // Must match your Apps Script
 
 const giftForm = document.getElementById("giftForm");
 const formStatus = document.getElementById("form-status");
@@ -13,7 +13,7 @@ if (giftForm) {
 
     const formData = {
       token: SHARED_TOKEN,
-      product_name: document.getElementById("luachon").value,
+      product_name: documentgit push -u origin main.getElementById("luachon").value,
       price: document.getElementById("gia").value,
       quantity: document.getElementById("soluong").value,
       customer_name: document.getElementById("ten").value,
