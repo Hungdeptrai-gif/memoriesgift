@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUCDRO6Ysfp6xktB2Eu1uAREWy8NjwX7kuhFzT_5jhV1JQFslIstJOfXb8FH5scuTj/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzKMU4W7iGU69cwJHxyVQL-dyrQuu5lmyGT6xh57h04gbsl1KJpatjwIIeoAQkDj-OH/exec";
 const SHARED_TOKEN = "X9@d2L!k7#Qz1pF4^bH6wM3&yT8rU5$eG0jC"; // Must match your Apps Script
 
 const giftForm = document.getElementById("giftForm");
